@@ -1,0 +1,175 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+#menu-body {
+  background-color: #F7F7F7;
+}
+
+/* START Header Section */
+header {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background-color: rgb(255, 255, 255);
+}
+
+header .navbar-nav {
+  text-transform: uppercase;
+}
+
+#logo {
+  width: 55px;
+}
+/* END Header Section */
+
+
+/* START Aside Section */
+#video-bg {
+  background-color: #D8EDE0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#starbucks-video {
+  width: 100%;
+  display: block; 
+  height: 100%;
+}
+/* END Aside Section */
+
+
+/* START Main Section */
+main {
+  background-color: #F7F7F7;
+}
+/* END Main Section */
+
+
+/* START Menu Content */
+.menu-content-pictures > div > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+/* END Menu Content */
+
+
+/* START Menu Links */
+.menu-links {
+  background-color: #F7F7F7;
+  position: fixed; 
+  top: 30px;
+}
+
+.menu-bar {
+  margin-top: 100px;
+}
+/* END Menu Links */
+
+
+/* START Footer Section */
+/* Remove borders from the accordion and its items */
+.accordion,
+.accordion-item {
+  border: none !important;
+}
+
+.accordion-button:focus {
+  outline: none;
+  box-shadow: none !important;
+}
+
+/* Disable background change on accordion titles */
+.accordion-button:not(.collapsed) {
+  outline: none;
+  background-color: white !important;
+}
+/* END Footer Section */
+
+/* START Responsive Section */
+@media all and (max-width: 992px) {
+  header {
+    position: relative !important;
+  }
+
+  #logo {
+    width: 45px;
+  }
+
+  #video-bg {
+    padding-top: 40px;
+    position: relative;
+    height: 30%;
+  }
+
+  .menu-bar {
+    margin-top: 10px;
+  }
+
+  #starbucks-video {
+    display: flex;
+    height: 30% !important;
+  }
+
+  header > nav {
+    display: flex;
+    align-items: start !important;
+    height: 100%;
+  }
+
+  .navbar-nav {
+    height: 35vh;
+    margin-top: 20px;
+    align-items: start !important;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5rem;
+    text-transform: capitalize !important;
+  }
+
+  .navbar-nav #mobile-buttons {
+    font-size: 14px;
+  }
+
+  #mobile-links {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.455);
+    width: 100%;
+  }
+
+  .menu-links {
+    position: relative; 
+    top: 0;
+  }
+
+  .find-a-store {
+    width: 100% !important;
+  }
+
+  .privacy {
+    height: 58vh;
+    padding-bottom: 50px;
+    min-height: 60% !important;
+  }
+}
+
+@media all and (max-width: 460px) {
+  .menu-content-pictures > div > img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media all and (max-width: 370px) {
+  .menu-content-pictures > div > img {
+    width: 100px;
+    height: 100px;
+  }
+}
+/* END Responsive Section */
